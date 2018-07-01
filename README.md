@@ -31,7 +31,7 @@ PBHunspell is a wrapper to the C/C++ spelling libraries Hunspell (spellcheck), L
 * Have a look at the Clicked event of the buttons on w_pbh_test_engine and at the Open event of w_pbh_test_spellchecker.
 
 ## Release notes
-Version PBHunspell release: 1.0.0
-Version pbhunspell.dll: 1.0.0.0 (see properties of pbhunspell.dll in Windows file explorer)
-Version pbhunspell.pbl: 1.0.0.0 (see properties of pbhunspell.pbl in PowerBuilder system tree)
-* Initial version.
+* Version PBHunspell release: 1.0.0
+* Version pbhunspell.dll: 1.0.0.0 (see properties of pbhunspell.dll in Windows file explorer)
+* Version pbhunspell.pbl: 1.0.0.0 (see properties of pbhunspell.pbl in PowerBuilder system tree)
+  - Initial version.
