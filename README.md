@@ -1,0 +1,24 @@
+# pbhunspell (Hunspell for PowerBuilder)
+PBHunspell is a wrapper to the C/C++ spelling libraries Hunspell (spellcheck), LibHnj aka Hyphen (hyphenation and justification) and MyThes (thesaurus). It consists of the files pbhunspell.dll and pbhunspell.pbl that run on Windows operating systems (x86 and x64), version 7 and higher.
+
+* pbhunspell.dll is a Win32 dynamic link library with export functions that access spelling objects through integer handles instead of through object pointers. Additionally these functions provide some error feedback. Although intended to work with PowerBuilder, pbhunspell.dll can also be used by other programming languages that can't reference C++ class pointers. The export functions PBHunspell_spellcheck_rtf_file_H() and PBHunspell_unspellcheck_rtf_file_H() are specifically designed to integrate with the internal RichTextEdit controls of PowerBuilder 12.X (TX Text Control) and 17.0 (TE Edit Control), but may also work to spellcheck rtf documents of other RichTextEdit controls.
+* pbhunspell.pbl is a PowerBuilder pibble that contains a spelling engine object, a RichTextEdit control with spellcheck capabilities and test windows.
+
+## Limitations
+### 1. Spellcheck parser
+* Spellcheck of input fields is always skipped.
+* The available spellcheck highlighting options are foreground color and background color. Other styles like wave underlines are not supported.
+* Spellcheck of colored text is skipped if it has the current highlighting style (foreground color or background color).
+* In the rtf document, the spellcheck color can't be used for anything else but spelling checking.
+* Specifically developed for built-in RichTextEdit control of PowerBuilder 12.X (TX Text Control) and 17.0 (TE Edit control).
+
+### 2. Interface
+* Currently supported interface languages are Dutch and English.
+
+## Known issues
+* Functions Hunspell_generate() and Hunspell_generate2() are technically implemented but always return an empty list. This issue has been reported to hunspell on github (https://github.com/hunspell/hunspell/issues/554).
+* For right-to-left languages, the text is shown from left-to-right in spellcheck mode. This problem applies to PowerBuilder 12.X (TX Text Control) but not to 17.0 (TE Edit control).
+* Suggestion and synonym lists are not shown for words selected in the header and footer of RichTextEdit controls. This problem applies to PowerBuilder 12.X (TX Text Control) but not to 17.0 (TE Edit control).
+
+## To do
+No files on GitHub yet. I'm currently figuring out how GitHub works. Please have some patience :-)
