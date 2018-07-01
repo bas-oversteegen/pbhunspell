@@ -21,7 +21,7 @@ PBHunspell is a wrapper to the C/C++ spelling libraries Hunspell (spellcheck), L
 * Suggestion and synonym lists are not shown for words selected in the header and footer of RichTextEdit controls. This problem applies to PowerBuilder 12.X (TX Text Control) but not to 17.0 (TE Edit control).
 
 ## Quick start
-* Download '.\pbh\Release\pbhunspell.dll' and '.\pbl\pbhunspell.pbl' and put them in the directory of your PowerBuilder 12.X or 17.0 application.
+* Download the files '.\pbh\Release\pbhunspell.dll' and '.\pbl\pbhunspell.pbl' and put them in the directory of your PowerBuilder 12.X or 17.0 application.
 * Add pbhunspell.pbl to the library list of the application's target.
 * Full build the target.
 * Download spelling dictionaries, for example from https://extensions.libreoffice.org/extensions (search for "dictionaries"). For each language you will need:
