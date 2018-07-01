@@ -20,5 +20,18 @@ PBHunspell is a wrapper to the C/C++ spelling libraries Hunspell (spellcheck), L
 * For right-to-left languages, the text is shown from left-to-right in spellcheck mode. This problem applies to PowerBuilder 12.X (TX Text Control) but not to 17.0 (TE Edit control).
 * Suggestion and synonym lists are not shown for words selected in the header and footer of RichTextEdit controls. This problem applies to PowerBuilder 12.X (TX Text Control) but not to 17.0 (TE Edit control).
 
-## To do
-No files on GitHub yet. I'm currently figuring out how GitHub works. Please have some patience :-)
+## Quick start
+* Download '.\pbh\Release\pbhunspell.dll' and '.\pbl\pbhunspell.pbl' and put them in the directory of your PowerBuilder 12.X or 17.0 application.
+* Add pbhunspell.pbl to the library list of the application's target.
+* Full build the target.
+* Download spelling dictionaries, for example from https://extensions.libreoffice.org/extensions (search for "dictionaries"). For each language you will need:
+  - Hunspell: .aff and .dic file. UTF-8 dictionaries are available at https://github.com/titoBouzout/Dictionaries
+  - Hyphen: .dic file (content differs from Hunspell .dic file)
+  - MyThes: .dat and .idx file
+* Have a look at the Clicked event of the buttons on w_pbh_test_engine and at the Open event of w_pbh_test_spellchecker.
+
+## Release notes
+Version PBHunspell release: 1.0.0
+Version pbhunspell.dll: 1.0.0.0 (see properties of pbhunspell.dll in Windows file explorer)
+Version pbhunspell.pbl: 1.0.0.0 (see properties of pbhunspell.pbl in PowerBuilder system tree)
+* Initial version.
