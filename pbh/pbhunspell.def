@@ -1,0 +1,34 @@
+LIBRARY "pbhunspell"
+EXPORTS
+  Hunspell_create_H @1
+  Hunspell_create_key_H @2
+  Hunspell_destroy_H @3
+  Hunspell_destroy_all_H @4
+  Hunspell_add_dic_H @5
+  Hunspell_spell_H @6
+  Hunspell_get_dic_encoding_H @7
+  Hunspell_suggest_H @8
+  Hunspell_analyze_H @9
+  Hunspell_stem_H @10
+  Hunspell_stem2_H @11
+  Hunspell_generate_H @12
+  Hunspell_generate2_H @13
+  Hunspell_add_H @14
+  Hunspell_add_with_affix_H @15
+  Hunspell_remove_H @16
+  MyThes_create_H @17
+  MyThes_destroy_H @18
+  MyThes_destroy_all_H @19
+  MyThes_get_th_encoding_H @20
+  MyThes_lookup_H @21
+  MyThes_lookup_read_H @22
+  MyThes_lookup_free_H @23
+  Hyphen_create_H @24
+  Hyphen_destroy_H @25
+  Hyphen_destroy_all_H @26
+  Hyphen_get_dic_encoding_H @27
+  Hyphen_hyphenate_H @28
+  Hyphen_hyphenate_ext_H @29
+  PBHunspell_get_version_H @30
+  PBHunspell_spellcheck_rtf_file_H @31
+  PBHunspell_unspellcheck_rtf_file_H @32
