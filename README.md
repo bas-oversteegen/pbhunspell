@@ -1,11 +1,11 @@
 # pbhunspell (Hunspell for PowerBuilder)
 PBHunspell is a wrapper to the C/C++ spelling libraries Hunspell (spellcheck), LibHnj aka Hyphen (hyphenation and justification) and MyThes (thesaurus). It consists of the files pbhunspell.dll and pbhunspell.pbl that run on Windows operating systems (x86 and x64), version 7 and higher.
 
-* pbhunspell.dll is a Win32 dynamic link library with export functions that access spelling objects through integer handles instead of through object pointers. Additionally these functions provide some error feedback. Although intended to work with PowerBuilder, pbhunspell.dll can also be used by other programming languages that can't reference C++ class pointers. The export functions PBHunspell_spellcheck_rtf_file_H() and PBHunspell_unspellcheck_rtf_file_H() are specifically designed to integrate with the internal RichTextEdit controls of PowerBuilder 12.X (TX Text Control) and 17.0 (TE Edit Control), but may also work to spellcheck rtf documents of other RichTextEdit controls.
+* pbhunspell.dll is a Win32 dynamic link library with export functions that access spelling objects through integer handles instead of through object pointers. Additionally these functions provide some error feedback. Although intended to work with PowerBuilder, pbhunspell.dll can also be used by other programming languages that can't reference C++ class pointers. The export functions PBHunspell_spellcheck_rtf_file_H() and PBHunspell_unspellcheck_rtf_file_H() are specifically designed to integrate with the internal RichTextEdit controls of PowerBuilder 12.X (TX Text Control) and 17.0 (TE Edit Control), but may also be usable to spellcheck rtf documents of other RichTextEdit controls.
 * pbhunspell.pbl is a PowerBuilder pibble that contains a spelling engine object, a RichTextEdit control with spellcheck capabilities and test windows.
 
 ## Limitations
-### 1. Spellcheck parser
+### 1. Spellcheck rtf parser
 * Spellcheck of input fields is always skipped.
 * The available spellcheck highlighting options are foreground color and background color. Other styles like wave underlines are not supported.
 * Spellcheck of colored text is skipped if it has the current highlighting style (foreground color or background color).
